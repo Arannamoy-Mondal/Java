@@ -1,7 +1,7 @@
 <h1>Java</h1>
 <ol>
-    <li><a href="https://github.com/Arannamoy-Mondal/Java/blob/main/gui.java">Graphical User Interface</a></li>
-    <li><a href="">Date Time</a></li>
+    <li><a href="#gui">Graphical User Interface</a></li>
+    <li><a href="#dateTime">Date Time</a></li>
     <li><a href="">File Handeling</a></li>
     <li><a href="">String format</a></li>
     <li><a href="">Access Modifiers</a></li>
@@ -18,11 +18,63 @@
     <li><a href=""></a></li>
 </ol>
 
+<!-- GUI -->
 
+<div id="gui">
 
+`Graphical User Interface:`
 
+```java
+    
+import javax.swing.JOptionPane;
 
+public class gui {
+    public static void main(String[] args) {
+        String s=JOptionPane.showInputDialog("Enter name");
+        JOptionPane.showMessageDialog(null, s);
 
+        int a=Integer.parseInt(JOptionPane.showInputDialog("Enter a integer number"));
+        JOptionPane.showMessageDialog(null,a);
+        float f=Float.parseFloat(JOptionPane.showInputDialog("Enter a float number:"));
+        JOptionPane.showMessageDialog(null,f);
+        
+    }
+}
+
+    ```
+</div>
+
+<!-- DateTime -->
+
+<div id="dateTime">
+
+`DateTime:`
+
+```java
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+public class dateTime {
+    public static void main(String[] args) {
+        /*
+         4 type of data in dateTime:
+         1.LocalDate
+         2.LocalTime
+         3.LocalDateTime
+         4.DateTimeFormatter 
+        */
+
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+        System.out.println(LocalDateTime.now());
+        DateTimeFormatter dateTimeFormat=DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        System.out.println(LocalDateTime.now().format(dateTimeFormat));
+    }
+    
+}
+
+    ```
+
+</div>
 
 
 
