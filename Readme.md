@@ -10,7 +10,7 @@
     <li><a href="#getterSetterMethod">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
     <li><a href="">Interface</a></li>
-    <li><a href="">Encapsulation</a></li>
+    <li><a href="#getterSetterMethod">Encapsulation</a></li>
     <li><a href="">Abstract Class & Abstract Method</a></li>
     <li><a href="">Polymorphism</a></li>
     <li><a href="">Overriding Method</a></li>
@@ -18,6 +18,7 @@
     <li><a href="">Projects</a></li>
 </ol>
 
+#
 
 <div id="stringFormat">
 
