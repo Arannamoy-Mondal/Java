@@ -1,4 +1,4 @@
-public class d_dry_inheritance extends baseClass{
+public class d_dry_inheritance{
     public static void main(String[] args) {
         multplicationAndSum(10,20,30,40);
     }

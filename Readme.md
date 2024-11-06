@@ -4,10 +4,10 @@
     <li><a href="#dateTime">Date Time</a></li>
     <li><a href="#fileHandeling">File Handeling</a></li>
     <li><a href="#stringFormat">String format & Random Generate</a></li>
-    <li><a href="">Access Modifiers</a></li>
+    <li><a href="#accessModifiers">Access Modifiers</a></li>
     <li><a href="#classConstructor">Class & Constructor</a></li>
     <li><a href="#staticMethod">Static Method</a></li>
-    <li><a href="">Getter Setter</a></li>
+    <li><a href="#getterSetterMethod">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
     <li><a href="">Interface</a></li>
     <li><a href="">Encapsulation</a></li>
@@ -435,6 +435,152 @@ public class classConstructor {
         return "Name: "+name+", id: "+id+", age: "+", balance: "+balance;
     }
 }
+
+```
+
+</div>
+
+
+<div id="getterSetterMethod">
+<a href="#topic">Topic</a>
+
+`Getter Setter Method`
+
+```java
+
+
+import java.util.*;
+
+public class baseClass {
+
+    private String name;
+    private String id;
+    private double bankBalance;
+    private String email, address;
+
+    baseClass(String name, double bankBalance, String email, String address) {
+        this.name = name;
+        this.id = String.format("%d", new Random().nextInt(10000));
+        this.bankBalance = bankBalance;
+        this.email = email;
+        this.address = address;
+    }
+
+    // class method. just use static keyword
+    public static int sumFunction(int... args) {
+        int res = 0;
+        for (int it : args) {
+            res += it;
+        }
+        return res;
+    }
+
+    // Getter Method
+    public String getName() {
+        return name;
+    }
+
+    // Getter Method
+    public String getId() {
+        return id;
+    }
+
+    // Getter Method
+    public double getBankBalance() {
+        return bankBalance;
+    }
+
+    // Setter method
+    public void setName(String newName){
+        name=newName;
+    }
+
+    // Setter method
+    public void setAddress(String newAddress){
+        address=newAddress;
+    }
+
+}
+
+```
+</div>
+
+<div id="accessModifiers">
+<a href="#topic">Topic</a>
+
+`Access Modifiers:`
+
+`Base Class:`
+
+```java
+
+import java.util.*;
+
+public class baseClass {
+
+    private String name;
+    private String id;
+    private double bankBalance;
+    private String email, address;
+
+    baseClass(String name, double bankBalance, String email, String address) {
+        this.name = name;
+        this.id = String.format("%d", new Random().nextInt(10000));
+        this.bankBalance = bankBalance;
+        this.email = email;
+        this.address = address;
+    }
+
+    // class method. just use static keyword
+    public static int sumFunction(int... args) {
+        int res = 0;
+        for (int it : args) {
+            res += it;
+        }
+        return res;
+    }
+
+    // Getter Method
+    public String getName() {
+        return name;
+    }
+
+    // Getter Method
+    public String getId() {
+        return id;
+    }
+
+    // Getter Method
+    public double getBankBalance() {
+        return bankBalance;
+    }
+
+    // Setter method
+    public void setName(String newName){
+        name=newName;
+    }
+
+    // Setter method
+    public void setAddress(String newAddress){
+        address=newAddress;
+    }
+
+}
+
+```
+
+`Child class:`
+
+```java
+
+public class accessModifiers {
+    public static void main(String[] args) {
+        baseClass myClass=new baseClass("Hi",500.00,"email.com","Maryland");
+        System.out.println(myClass.getName());// here, name attribute of myClass can not return value because it is a private attribute, so use getter method
+        String s="Hello"; // default modifier
+    }
+}
+
 
 ```
 
