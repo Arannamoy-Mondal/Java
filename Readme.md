@@ -1,12 +1,12 @@
 <h1>Java</h1>
-<ol>
+<ol id="topic">
     <li><a href="#gui">Graphical User Interface</a></li>
     <li><a href="#dateTime">Date Time</a></li>
     <li><a href="#fileHandeling">File Handeling</a></li>
     <li><a href="#stringFormat">String format & Random Generate</a></li>
     <li><a href="">Access Modifiers</a></li>
     <li><a href="#constructor">Class & Constructor</a></li>
-    <li><a href="">Static Method</a></li>
+    <li><a href="staticMethod">Static Method</a></li>
     <li><a href="">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
     <li><a href="">Interface</a></li>
@@ -20,6 +20,8 @@
 
 
 <div id="stringFormat">
+
+<a href="#topic">Topic</a>
 
 `String Format and Random Generate`:
 
@@ -41,6 +43,8 @@ public class stringFormat {
 <!-- GUI -->
 
 <div id="gui">
+
+<a href="#topic">Topic</a>
 
 `Graphical User Interface:`
 
@@ -68,6 +72,8 @@ public class gui {
 <!-- DateTime -->
 
 <div id="dateTime">
+
+<a href="#topic">Topic</a>
 
 `DateTime:`
 
@@ -104,6 +110,8 @@ public class dateTime {
 
 <div id="inheritance">
 <!-- # <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a> -->
+
+<a href="#topic">Topic</a>
 
 `Inheritance:`
 <br>
@@ -278,6 +286,8 @@ public class d_dry_inheritance extends baseClass{
 
 <div id="fileHandeling">
 
+<a href="#topic">Topic</a>
+
 `File Handeling:`
 <br>
  
@@ -371,4 +381,30 @@ public class fileDelete{
 
 ```
 
+</div>
+
+
+<div id="staticMethod">
+<a href="#topic">Topic</a>
+
+`Static Method:`
+
+<h3>Static method works like class method of python. For main class if any method declared must use static keyword. But if static use in other class it works like class method of python.</h3>
+
+```java
+
+public class staticMethod {
+    public static void main(String[] args) {
+        int a=40;
+        output(a);
+    }
+
+    public static void output(int a){
+        System.out.println("Hello");
+    }
+    
+}
+
+```
+<a href="#inheritance">For more click here.</a>
 </div>
