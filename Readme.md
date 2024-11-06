@@ -1,4 +1,21 @@
-# Java
+<h1>Java</h1>
+<ol>
+    <li><a href="#constructor">Constructor</a></li>
+    <li><a href="#inheritance">Inheritance</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ol>
+
+
+<div id="inheritance">
+    <pre>
+    # Java
 <!-- # <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a> -->
 
 `Inheritance:`
@@ -158,3 +175,13 @@ public class d_dry_inheritance extends baseClass{
 }
 
 ```
+
+```java
+
+100
+240000
+
+```
+
+</pre>
+</div>
