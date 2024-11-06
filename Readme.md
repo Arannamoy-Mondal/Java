@@ -1,8 +1,10 @@
 # Java
-# <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a>
+<!-- # <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a> -->
 
 `Inheritance:`
-`Parent class:`
+<br>
+`Base class:`
+
 ```java
 
 abstract public class a_inheritance_1 {
@@ -51,5 +53,56 @@ public class main {
     }
 }
 
+```
+
+
+`Override Method:`
+
+<br>
+
+`Base class:`
+
+```java
+abstract public class c_override_method {
+    void output(){
+
+    }
+}
+```
+`Child class:`
+
+```java
+public class c_override_method_2 extends c_override_method{
+    void output(String a){
+        System.out.println(a);
+    }
+} 
+```
+
+`main class`
+
+```java
+
+public class main {
+    public static void main(String[] args) {
+        // ineritance
+        b_inheritance_2 inheritance1=new b_inheritance_2();
+        System.out.println(inheritance1.sum(10,20,30));
+        System.out.println(inheritance1.multiplication(10,20));// this multi function does not declare in child class
+      //Override method 
+      c_override_method_2 override1=new c_override_method_2(); 
+      override1.output("Override");
+      
+    }
+}
+
+```
+
+`output:`
+
+```java
+70
+200
+Override
 ```
 
