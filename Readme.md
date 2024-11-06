@@ -6,7 +6,7 @@
     <li><a href="#stringFormat">String format & Random Generate</a></li>
     <li><a href="">Access Modifiers</a></li>
     <li><a href="#constructor">Class & Constructor</a></li>
-    <li><a href="staticMethod">Static Method</a></li>
+    <li><a href="#staticMethod">Static Method</a></li>
     <li><a href="">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
     <li><a href="">Interface</a></li>
