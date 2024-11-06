@@ -1,17 +1,33 @@
 <h1>Java</h1>
 <ol>
+    <li><a href="">Graphical User Interface</a></li>
+    <li><a href="">Date Time</a></li>
+    <li><a href="">File Handeling</a></li>
+    <li><a href="">String format</a></li>
+    <li><a href="">Access Modifiers</a></li>
     <li><a href="#constructor">Class & Constructor</a></li>
     <li><a href="">Static Method</a></li>
     <li><a href="">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
+    <li><a href="">Interface</a></li>
     <li><a href="">Encapsulation</a></li>
     <li><a href="">Abstract Class & Abstract Method</a></li>
     <li><a href="">Polymorphism</a></li>
     <li><a href="">Overriding Method</a></li>
-    <li><a href=""></a></li>
+    <li><a href="">Overloading Method</a></li>
     <li><a href=""></a></li>
 </ol>
 
+
+
+
+
+
+
+
+
+
+<!-- Inheritance div start-->
 
 <div id="inheritance">
 <!-- # <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a> -->
@@ -181,5 +197,6 @@ public class d_dry_inheritance extends baseClass{
 
 ```
 
-</pre>
 </div>
+
+<!-- Inheritance div end -->
