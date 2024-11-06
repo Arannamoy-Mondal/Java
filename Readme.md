@@ -2,8 +2,8 @@
 <ol>
     <li><a href="#gui">Graphical User Interface</a></li>
     <li><a href="#dateTime">Date Time</a></li>
-    <li><a href="">File Handeling</a></li>
-    <li><a href="">String format</a></li>
+    <li><a href="#fileHandeling">File Handeling</a></li>
+    <li><a href="#stringFormat">String format & Random Generate</a></li>
     <li><a href="">Access Modifiers</a></li>
     <li><a href="#constructor">Class & Constructor</a></li>
     <li><a href="">Static Method</a></li>
@@ -18,6 +18,26 @@
     <li><a href=""></a></li>
 </ol>
 
+
+<div id="stringFormat">
+
+`String Format and Random Generate`:
+
+```java
+import java.util.*;
+public class stringFormat {
+    public static void main(String[] args) {
+        int a=10;
+        String s=String.format("%d",a);
+        System.out.println(s.length());
+        Random rand=new Random();
+        System.out.println(String.format("%d",rand.nextInt(10000)));
+
+    }    
+}
+
+```
+</div>
 <!-- GUI -->
 
 <div id="gui">
@@ -253,3 +273,102 @@ public class d_dry_inheritance extends baseClass{
 </div>
 
 <!-- Inheritance div end -->
+
+<!-- file handeling -->
+
+<div id="fileHandeling">
+
+`File Handeling:`
+<br>
+ 
+`File Create:`
+
+```java
+
+import java.io.*;
+public class fileHandeling {
+    public static void main(String[] args) {
+        File myFile=new File("input.txt");
+
+        try {
+            if(myFile.createNewFile()){
+                System.out.println("File created successfully");
+            }
+            else{
+                System.out.println("File already exist");
+            }
+        }
+        catch(IOException e){
+            System.out.println("An error catch");
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+<br>
+
+`File read:`
+
+```java
+
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+
+public class fileRead {
+    public static void main(String[] args) {
+        File myFile=new File("input.txt");
+        try {
+            if(myFile.createNewFile()){
+                System.out.println("SuccessFully create this file.");
+                Scanner scan=new Scanner(myFile); // myFile instead of System.in
+                while(scan.hasNextLine()){
+                    System.out.println(scan.nextLine());
+                }
+                scan.close();
+            }
+        } 
+        catch (IOException e) {
+            System.out.println("An error occur.");
+            e.printStackTrace();
+        }
+    }
+    
+}
+
+```
+
+`File Delete`
+
+
+```java
+
+
+import java.io.File;
+import java.io.IOException;
+public class fileDelete{
+
+    public static void main(String[] args) {
+        File myFile = new File("Input.txt");
+        // try 
+        {
+            
+            if (myFile.delete()) {
+                System.out.println("Successfully deleted");
+            }
+            else{
+                System.out.println("Already deleted");
+            }
+        }
+        // catch (IOException e) {
+        //     System.out.println("An error occur.");
+        //     e.printStackTrace();
+        // }
+    }
+}
+
+
+```
+
+</div>
