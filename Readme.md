@@ -1,21 +1,19 @@
 <h1>Java</h1>
 <ol>
-    <li><a href="#constructor">Constructor</a></li>
+    <li><a href="#constructor">Class & Constructor</a></li>
+    <li><a href="">Static Method</a></li>
+    <li><a href="">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
+    <li><a href="">Encapsulation</a></li>
+    <li><a href="">Abstract Class & Abstract Method</a></li>
+    <li><a href="">Polymorphism</a></li>
+    <li><a href="">Overriding Method</a></li>
     <li><a href=""></a></li>
     <li><a href=""></a></li>
 </ol>
 
 
 <div id="inheritance">
-
-# Java
 <!-- # <a href="https://arannamoy-mondal.github.io/Java/">https://arannamoy-mondal.github.io/Java/</a> -->
 
 `Inheritance:`
