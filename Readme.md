@@ -5,7 +5,7 @@
     <li><a href="#fileHandeling">File Handeling</a></li>
     <li><a href="#stringFormat">String format & Random Generate</a></li>
     <li><a href="">Access Modifiers</a></li>
-    <li><a href="#constructor">Class & Constructor</a></li>
+    <li><a href="#classConstructor">Class & Constructor</a></li>
     <li><a href="#staticMethod">Static Method</a></li>
     <li><a href="">Getter Setter</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
@@ -407,4 +407,35 @@ public class staticMethod {
 
 ```
 <a href="#inheritance">For more click here.</a>
+</div>
+
+
+<div id="classConstructor">
+    <a href="#topic">Topic</a>
+
+`Class & Constructor:`
+
+```java
+
+import  java.util.*;
+public class classConstructor {
+    String name;
+    int age;
+    double balance;
+    String id;
+    public void classConstructor(String name,int age,double balance){
+        this.name=name;
+        this.age=age;
+        this.balance=balance;
+        this.id=String.format("%d",new Random().nextInt(1000));
+    }
+
+    // toString method works like overloading method
+    public String toString(){
+        return "Name: "+name+", id: "+id+", age: "+", balance: "+balance;
+    }
+}
+
+```
+
 </div>
