@@ -3,6 +3,7 @@
     <li><a href="#gui">Graphical User Interface</a></li>
     <li><a href="#dateTime">Date Time</a></li>
     <li><a href="#fileHandeling">File Handeling</a></li>
+    <li><a href="#errorHandeling">Error Handeling</a></li>
     <li><a href="#stringFormat">String format & Random Generate</a></li>
     <li><a href="#accessModifiers">Access Modifiers</a></li>
     <li><a href="#classConstructor">Class & Constructor</a></li>
@@ -586,3 +587,35 @@ public class accessModifiers {
 ```
 
 </div>
+
+<div id="errorHandeling">
+    
+```java
+import java.util.*;
+public class Main{
+    public static void main(String args[]) {
+    	Scanner sc=new Scanner(System.in);
+    	try {
+    		System.out.println("a:");
+    		int a=sc.nextInt();
+    		System.out.println("b:");
+    		String b=sc.next().trim();
+    		int c=Integer.parseInt(b);
+    		int ans=a/c;
+    		System.out.println(ans);
+    	}
+    	catch(Exception e) {
+    		System.err.println(e+"\n"+e.getMessage()+"\n");
+    		e.printStackTrace();
+    	}
+    	finally{
+    		System.err.println("Done");
+    	}
+    	sc.close();
+    }
+}
+
+```
+</div>
+
+
