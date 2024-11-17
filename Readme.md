@@ -589,6 +589,7 @@ public class accessModifiers {
 </div>
 
 <div id="errorHandeling">
+ <a href="#topic">Topic</a>
     
 ```java
 import java.util.*;
