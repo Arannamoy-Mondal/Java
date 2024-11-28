@@ -382,6 +382,44 @@ public class fileDelete{
 
 
 ```
+`Object File Handeling: `
+
+```java
+//  save data start
+public void saveData(){
+    try {
+        ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(fileName));
+        if(!fileName.exists()){
+            fileName.createNewFile();
+        }
+        oos.writeObject(object);
+        oos.close();
+    }
+    catch (Exception e)
+    {
+        System.out.println("Error given save data");
+    }
+}
+//  save data end
+//    load data start
+public void loadData(){
+        try{
+            
+            ObjectInputStream oos = new ObjectInputStream(new FileInputStream(fileName));
+            if(!fileName.exists()){
+                fileName.createNewFile();
+            }
+            Object = (Object) oos.readObject();
+            oos.close();
+
+        }
+        catch (Exception e){
+            System.out.println("Error given load data");
+        }
+}
+//    load data end
+```
+
 
 </div>
 
